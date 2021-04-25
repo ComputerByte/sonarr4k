@@ -74,7 +74,7 @@ systemctl stop sonarr4k.service  >> $log 2>&1
 sleep 20
 systemctl start sonarr.service >> $log 2>&1
 sed -i "s/8989/8882/g" /home/$user/.config/sonarr4k/config.xml  >> $log 2>&1
-sed -i "s/<UrlBase>sonarr<\/UrlBase>/<UrlBase>\/sonarr4k<\/UrlBase>/g" /home/$user/.config/sonarr4k/config.xml  >> $log 2>&1
+sed -i "s/<UrlBase><\/UrlBase>/<UrlBase>\/sonarr4k<\/UrlBase>/g" /home/$user/.config/sonarr4k/config.xml  >> $log 2>&1
 echo_progress_done "Done generating config."
 sleep 20
 
