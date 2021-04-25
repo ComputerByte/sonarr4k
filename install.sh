@@ -47,13 +47,16 @@ if [[ -f /install/.nginx.lock ]]; then
     echo_progress_start "Installing nginx config"
     cat > /etc/nginx/apps/sonarr4k.conf <<- NGX
     location /sonarr4k {
-      proxy_pass        http://127.0.0.1:8882/sonarr4k;
-      proxy_set_header Host $proxy_host;
-      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-      proxy_set_header X-Forwarded-Proto $scheme;
-      proxy_redirect off;
-      auth_basic "What's the password?";
-      auth_basic_user_file /etc/htpasswd.d/htpasswd.byte;
+        proxy_pass        http://127.0.0.1:8882/sonarr4k;
+        proxy_set_header Host \$proxy_host;
+        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto \$scheme;
+        proxy_redirect off;
+        auth_basic "What's the password?";
+        auth_basic_user_file /etc/htpasswd.d/htpasswd.${user};
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade \$http_upgrade;
+        proxy_set_header Connection \$http_connection;
     }
 NGX
 # Reload nginx
