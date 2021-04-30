@@ -20,7 +20,7 @@ rm /install/.sonarr4k.lock
 
 sed -e "s/class sonarr4k_meta://g" -i /opt/swizzin/core/custom/profiles.py
 sed -e "s/    name = \"sonarr4k\"//g" -i /opt/swizzin/core/custom/profiles.py
-sed -e "s/    pretty_name = \"sonarr 4K\"//g" -i /opt/swizzin/core/custom/profiles.py
+sed -e "s/    pretty_name = \"Sonarr 4K\"//g" -i /opt/swizzin/core/custom/profiles.py
 sed -e "s/    baseurl = \"\/sonarr4k\"//g" -i /opt/swizzin/core/custom/profiles.py
 sed -e "s/    systemd = \"sonarr4k\"//g" -i /opt/swizzin/core/custom/profiles.py
 sed -e "s/    check_theD = True//g" -i /opt/swizzin/core/custom/profiles.py
