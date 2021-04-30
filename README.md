@@ -20,3 +20,13 @@ sudo systemctl start sonarr4k
 ```
 
 The log file should be located at ``/root/log/swizzin.log``.
+
+# Uninstaller: 
+
+```bash
+sudo su -
+wget "https://raw.githubusercontent.com/ComputerByte/radarr4k/main/sonarr4kuninstall.sh"
+chmod +x ~/sonarr4kuninstall.sh
+~/sonarr4kuninstall.sh
+```
+
