@@ -7,9 +7,9 @@ Uses existing install as a base. you must ``sudo box install sonarrv3`` prior to
 Run install.sh as sudo
 ```bash
 sudo su -
-wget "https://raw.githubusercontent.com/ComputerByte/sonarr4k/main/install.sh"
-chmod +x ~/install.sh
-~/install.sh
+wget "https://raw.githubusercontent.com/ComputerByte/sonarr4k/main/sonarr4kinstall.sh"
+chmod +x ~/sonarr4kinstall.sh
+~/sonarr4kinstall.sh
 ```
 Sometimes Sonarr1 won't start due to another Sonarr existing, use the panel to stop Sonarr and Sonarr4k, enable Sonarr and wait a second before starting Sonarr4k or
 
