@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script by @ComputerByte 
+# Script by @ComputerByte
 # For Sonarr 4K Uninstalls
 
 # Log to Swizzin.log
