@@ -2,7 +2,7 @@
 ### For Swizzin installs
 Second Sonarr Installation on Swizzin based systems
 
-Uses existing install as a base. you must ``sudo box install sonarrv3`` prior to running this script. 
+Uses existing install as a base. you must ``sudo box install sonarr`` prior to running this script. 
 
 Run install.sh as sudo
 ```bash
