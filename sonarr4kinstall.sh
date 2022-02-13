@@ -72,7 +72,7 @@ cat > /home/${user}/.config/sonarr4k/config.xml << EOSC
 <Config>
   <LogLevel>info</LogLevel>
   <EnableSsl>False</EnableSsl>
-  <Port>8982</Port>
+  <Port>8882</Port>
   <SslPort>9898</SslPort>
   <UrlBase>/sonarr4k</UrlBase>
   <BindAddress>127.0.0.1</BindAddress>
