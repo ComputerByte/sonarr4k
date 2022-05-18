@@ -79,7 +79,7 @@ cat > /home/${user}/.config/sonarr4k/config.xml << EOSC
 <Config>
   <LogLevel>info</LogLevel>
   <UpdateMechanism>BuiltIn</UpdateMechanism>
-  <Branch>develop</Branch>
+  <Branch>main</Branch>
   <BindAddress>127.0.0.1</BindAddress>
   <Port>8882</Port>
   <SslPort>9898</SslPort>
