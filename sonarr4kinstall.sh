@@ -77,7 +77,7 @@ systemctl stop sonarr.service >>$log 2>&1
 
 cat > /home/${user}/.config/sonarr4k/config.xml << EOSC
 <Config>
-  <LogLevel>debug</LogLevel>
+  <LogLevel>info</LogLevel>
   <UpdateMechanism>BuiltIn</UpdateMechanism>
   <Branch>develop</Branch>
   <BindAddress>127.0.0.1</BindAddress>
